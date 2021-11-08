@@ -121,7 +121,3 @@ rossrv
 * git  // 代码的版本管理软件（可以有效的防止代码丢失）
 * vim  // 远程登录只有终端的机器人时可能并没有GUI软件可以用来修改文本文件
 
-
-
-[工程github地址](https://github.com/Nlict-RC/course2021-wheeled_robot)
-
