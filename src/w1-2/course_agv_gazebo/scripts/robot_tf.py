@@ -34,8 +34,7 @@ class GazeboLinkPose:
     def publish_tf(self):
         p = self.link_pose.position
         o = self.link_pose.orientation
-        self.tf_pub.sendTransform((p.x,p.y,p.z),(o.x,o.y,o.z,o.w),
-                                    rospy.Time.now(),self.link_name,"map")
+        # TODO publish tf
 
 if __name__ == '__main__':
     try:
