@@ -4,4 +4,4 @@
 
 * [x] [1-1.运动学&tf&rviz](document/2_models.md)
 * [x] [1-2.仿真深搜/广搜](document/3_search.md)
-* [x] [1-3.路径规划+跟踪控制器](document/4_pathplan.md)
+* [x] [1-3.路径规划+轨迹规划](document/4_realrobot.md)
