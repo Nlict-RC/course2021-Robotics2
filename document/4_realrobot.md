@@ -20,7 +20,7 @@
 
    密码：robot123
 
-3. 在ssh界面修改机器人上的`/etc/hosts`文件，加入自己的笔记本的IP和用户名（同一个IP不能有多个用户名），例如
+3. 在ssh界面修改机器人上的`/etc/hosts`文件，加入自己的笔记本的IP和机器名（同一个IP不能有多个机器名），例如
 
    ```
    127.0.0.1		localhost
@@ -28,7 +28,7 @@
    192.168.1.1     zdk-laptop
    ```
 
-4. 修改自己的笔记本的`/etc/hosts`文件，加入机器人的IP和用户名，例如
+4. 修改自己的笔记本的`/etc/hosts`文件，加入机器人的IP和机器名，**例如**
 
    ```
    127.0.0.1		localhost
@@ -68,14 +68,13 @@ $ rosrun calib_imu imu_calib
 
 ```bash
 # 注意，以下命令二选一
-$ rosrun topic_tools relay /scan /scan_emma_nav_front
-$ rosrun topic_tools relay /scan_emma_nav_front /scan
+$ rosrun topic_tools relay /scan /scan_emma_nav_front   ### 老车
+$ rosrun topic_tools relay /scan_emma_nav_front /scan   ### 新车
 ```
 
-3. 打开urg节点，在ssh的界面上输入以下命令
+3. 打开urg节点，在ssh的界面上输入以下命令 (仅老车需要)
 
 ```bash
-# 以下命令仅老车需要
 $ rosrun urg_node urg_node
 ```
 
