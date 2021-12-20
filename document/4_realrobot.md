@@ -11,6 +11,7 @@
 ## 连接机器人
 
 1. 修改自己笔记本的IP地址，设为Manual，Address：192.168.1.1，Netmask：255.255.255.0，Gateway：192.168.1.1
+- 打开设置，选择“网络”
 
 2. 网线连接自己的笔记本和机器人，终端ssh进去，ssh成功则说明网络层面上连接机器人成功
 
@@ -20,12 +21,16 @@
 
    密码：robot123
 
-3. 在ssh界面修改机器人上的`/etc/hosts`文件，加入自己的笔记本的IP和机器名（同一个IP不能有多个机器名），例如
+3. 在ssh界面修改机器人上的`/etc/hosts`文件，加入自己的笔记本的IP和机器名（同一个IP不能有多个机器名） (把 zdk-laptop 修改为自己的机器名)
+
+   <p align="center"><img src="./images/2021-12-20-1.png" width="70%"><br><em>@前的zdk为用户名，@后的zdk-rog为机器名</em></p>
+
+
 
    ```
-   127.0.0.1		localhost
-   127.0.1.1		jzrobot-x
-   192.168.1.1     zdk-laptop
+   127.0.0.1      localhost
+   127.0.1.1      jzrobot-x
+   192.168.1.1    zdk-laptop
    ```
 
 4. 修改自己的笔记本的`/etc/hosts`文件，加入机器人的IP和机器名，**例如**
