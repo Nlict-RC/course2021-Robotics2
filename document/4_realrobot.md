@@ -54,11 +54,12 @@
    $ source ~/.bashrc
    ```
 
-7. 在自己的笔记本查看机器人上的topic，如果能输出topic的信息则说明ROS层面上连接成功
+7. 在自己的笔记本查看机器人上的topic与node，如果能输出topic的信息且node的信息无报错则说明ROS层面上连接成功
 
    ```bash
-   $ rostopic list
-   $ rostopic echo /rosout
+   $ rostopic list  ### 查看是否列出所有topic的信息
+   $ rostopic echo /rosout  ### 查看/rosout是否一直打印东西
+   $ rosnode info /move_base  ### 查看最后一行有无ERROR
    ```
 
 ## 建图&定位
